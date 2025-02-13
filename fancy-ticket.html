@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Theatre Booking</title>
+    <link rel="stylesheet" href="fancy-ticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="index.html" class="fancy-back-button">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </a>
+    </div>
+    <div class="ticket-wrapper">
+        <div class="show-banner">
+            <div class="show-info">
+                <h1 id="showTitle">Loading...</h1>
+                <div class="show-meta">
+                    <span id="showDate"><i class="far fa-calendar"></i> Date: Loading...</span>
+                    <span id="showTime"><i class="far fa-clock"></i> Time: Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-container">
+            <div class="stage-section">
+                <div class="stage">
+                    <div class="stage-name">STAGE</div>
+                    <div class="stage-lights">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seating-section">
+                <div class="seats-legend">
+                    <div class="legend-item">
+                        <span class="seat-demo available"></span>
+                        <label>Available</label>
+                    </div>
+                    <div class="legend-item">
+                        <span class="seat-demo selected"></span>
+                        <label>Selected</label>
+                    </div>
+                    <div class="legend-item">
+                        <span class="seat-demo occupied"></span>
+                        <label>Occupied</label>
+                    </div>
+                </div>
+
+                <div class="seats-container" id="seatsContainer"></div>
+            </div>
+
+            <div class="booking-summary">
+                <div class="summary-card">
+                    <h3><i class="fas fa-receipt"></i> Booking Summary</h3>
+                    <div class="summary-details">
+                        <p>Selected Seats: <span id="selectedSeatsText">None</span></p>
+                        <p>Price per Ticket: $<span id="pricePerTicket">0</span></p>
+                        <div class="total-amount">
+                            <h4>Total Amount:</h4>
+                            <span id="totalAmount">$0.00</span>
+                        </div>
+                    </div>
+                    <button id="bookButton" class="fancy-button">
+                        <span class="button-text">Proceed to Payment</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="fancy-ticket.js"></script>
+</body>
+</html>

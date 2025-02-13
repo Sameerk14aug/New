@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Shows</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ts2.png" alt="Logo"></a>
+        </div>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <a href="fancy-ticket.html"><i class="fas fa-ticket-alt"></i></a>
+    </nav>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for shows, artists, or events...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <div class="filter-container">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="shows">Shows</button>
+            <button class="filter-btn" data-filter="artists">Artists</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <div class="results-container" id="searchResults">
+            <!-- Results will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

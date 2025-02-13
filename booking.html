@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your theatre tickets">
+    <title>Book Tickets | TheatreShow</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ts2.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="theatre.html">Theatre</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="auditorium.html">Auditorium</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="signup.html"><i class="fas fa-user"></i></a>
+            <a href="fancy-ticket.html" class="active"><i class="fas fa-ticket-alt"></i></a>
+        </div>
+    </nav>
+
+    <div class="booking-container">
+
+        <div class="show-details">
+            <img id="showImage" src="" alt="Show Poster">
+            <div class="show-info">
+                <h2 id="showTitle"></h2>
+                <p id="showDescription"></p>
+                <p>Price: <span id="showPrice"></span></p>
+                <!-- ...existing code... -->
+                <p>Date: <select id="dateSelect">
+                        <option>Select Date</option>
+                        <option>2024-02-20</option>
+                        <option>2024-02-21</option>
+                    </select></p>
+                <p>Time: <select id="timeSelect">
+                        <option>Select Time</option>
+                        <option>14:00</option>
+                        <option>19:00</option>
+                    </select></p>
+            </div>
+        </div>
+
+        <div class="seating-plan">
+            <h3>Select Your Seats</h3>
+            <div class="screen"><img src="seating-plan@2x.png" alt="" width="100%" class="stage-img"></div>
+            <div class="seats-container">
+                <!-- Seats will be generated via JavaScript -->
+            </div>
+            <div class="seat-legend">
+                <label for="">Seat Number:</label>
+                <select name="tier1" id="tier1" id="seatSelect">
+                    <option value="">Select Seat No.</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                    <option value="A6">A6</option>
+                    <option value="A7">A7</option>
+                    <option value="A8">A8</option>
+                    <option value="A9">A9</option>
+                    <option value="A10">A10</option>
+                    <option value="A11">A11</option>
+                    <option value="A12">A12</option>
+                    <option value="A13">A13</option>
+                    <option value="A14">A14</option>
+                    <option value="A15">A15</option>
+                    <option value="A16">A16</option>
+                    <option value="A17">A17</option>
+                    <option value="A18">A18</option>
+                    <option value="A19">A19</option>
+                    <option value="A20">A20</option>
+                    <option value="A21">A21</option>
+                    <option value="A22">A22</option>
+                    <option value="A23">A23</option>
+                    <option value="A24">A24</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                    <option value="B4">B4</option>
+                    <option value="B5">B5</option>
+                    <option value="B6">B6</option>
+                    <option value="B7">B7</option>
+                    <option value="B8">B8</option>
+                    <option value="B9">B9</option>
+                    <option value="B10">B10</option>
+                    <option value="B11">B11</option>
+                    <option value="B12">B12</option>
+                    <option value="B13">B13</option>
+                    <option value="B14">B14</option>
+                    <option value="B15">B15</option>
+                    <option value="B16">B16</option>
+                    <option value="B17">B17</option>
+                    <option value="B18">B18</option>
+                    <option value="B19">B19</option>
+                    <option value="B20">B20</option>
+                    <option value="B21">B21</option>
+                    <option value="B22">B22</option>
+                    <option value="B23">B23</option>
+                    <option value="B24">B24</option>
+                    <option value="B25">B25</option>
+                    <option value="B26">B26</option>
+                    <option value="B27">B27</option>
+                    <option value="B28">B28</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                    <option value="C4">C4</option>
+                    <option value="C5">C5</option>
+                    <option value="C6">C6</option>
+                    <option value="C7">C7</option>
+                    <option value="C8">C8</option>
+                    <option value="C9">C9</option>
+                    <option value="C10">C10</option>
+                    <option value="C11">C11</option>
+                    <option value="C12">C12</option>
+                    <option value="C13">C13</option>
+                    <option value="C14">C14</option>
+                    <option value="C15">C15</option>
+                    <option value="C16">C16</option>
+                    <option value="C17">C17</option>
+                    <option value="C18">C18</option>
+                    <option value="C19">C19</option>
+                    <option value="C20">C20</option>
+                    <option value="C21">C21</option>
+                    <option value="C22">C22</option>
+                    <option value="C23">C23</option>
+                    <option value="C24">C24</option>
+                    <option value="C25">C25</option>
+                    <option value="C26">C26</option>
+                    <option value="C27">C27</option>
+                    <option value="C28">C28</option>
+                    <option value="C29">C29</option>
+                    <option value="C30">C30</option>
+                    <option value="C31">C31</option>
+                    <option value="C32">C32</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D2</option>
+                    <option value="D3">D3</option>
+                    <option value="D4">D4</option>
+                    <option value="D5">D5</option>
+                    <option value="D6">D6</option>
+                    <option value="D7">D7</option>
+                    <option value="D8">D8</option>
+                    <option value="D9">D9</option>
+                    <option value="D10">D10</option>
+                    <option value="D11">D11</option>
+                    <option value="D12">D12</option>
+                    <option value="D13">D13</option>
+                    <option value="D14">D14</option>
+                    <option value="D15">D15</option>
+                    <option value="D16">D16</option>
+                    <option value="D17">D17</option>
+                    <option value="D18">D18</option>
+                    <option value="D19">D19</option>
+                    <option value="D20">D20</option>
+                    <option value="D21">D21</option>
+                    <option value="D22">D22</option>
+                    <option value="D23">D23</option>
+                    <option value="D24">D24</option>
+                    <option value="D25">D25</option>
+                    <option value="D26">D26</option>
+                    <option value="D27">D27</option>
+                    <option value="D28">D28</option>
+                    <option value="D29">D29</option>
+                    <option value="D30">D30</option>
+                    <option value="D31">D31</option>
+                    <option value="D32">D32</option>
+                    <option value="D33">D33</option>
+                    <option value="D34">D34</option>
+                    <option value="D35">D35</option>
+                    <option value="D36">D36</option>
+                    <option value="E1">E1</option>
+                    <option value="E2">E2</option>
+                    <option value="E3">E3</option>
+                    <option value="E4">E4</option>
+                    <option value="E5">E5</option>
+                    <option value="E6">E6</option>
+                    <option value="E7">E7</option>
+                    <option value="E8">E8</option>
+                    <option value="E9">E9</option>
+                    <option value="E10">E10</option>
+                    <option value="E11">E11</option>
+                    <option value="E12">E12</option>
+                    <option value="E13">E13</option>
+                    <option value="E14">E14</option>
+                    <option value="E15">E15</option>
+                    <option value="E16">E16</option>
+                    <option value="E17">E17</option>
+                    <option value="E18">E18</option>
+                    <option value="E19">E19</option>
+                    <option value="E20">E20</option>
+                    <option value="E21">E21</option>
+                    <option value="E22">E22</option>
+                    <option value="E23">E23</option>
+                    <option value="E24">E24</option>
+                    <option value="E25">E25</option>
+                    <option value="E26">E26</option>
+                    <option value="E27">E27</option>
+                    <option value="E28">E28</option>
+                    <option value="E29">E29</option>
+                    <option value="E30">E30</option>
+                    <option value="E31">E31</option>
+                    <option value="E32">E32</option>
+                    <option value="E33">E33</option>
+                    <option value="E34">E34</option>
+                    <option value="E35">E35</option>
+                    <option value="E36">E36</option>
+                    <option value="E37">E37</option>
+                    <option value="E38">E38</option>
+                    <option value="E39">E39</option>
+                    <option value="E40">E40</option>
+                    <option value="F1">F1</option>
+                    <option value="F2">F2</option>
+                    <option value="F3">F3</option>
+                    <option value="F4">F4</option>
+                    <option value="F5">F5</option>
+                    <option value="F6">F6</option>
+                    <option value="F7">F7</option>
+                    <option value="F8">F8</option>
+                    <option value="F9">F9</option>
+                    <option value="F10">F10</option>
+                    <option value="F11">F11</option>
+                    <option value="F12">F12</option>
+                    <option value="F13">F13</option>
+                    <option value="F14">F14</option>
+                    <option value="F15">F15</option>
+                    <option value="F16">F16</option>
+                    <option value="F17">F17</option>
+                    <option value="F18">F18</option>
+                    <option value="F19">F19</option>
+                    <option value="F20">F20</option>
+                    <option value="F21">F21</option>
+                    <option value="F22">F22</option>
+                    <option value="F23">F23</option>
+                    <option value="F24">F24</option>
+                    <option value="F25">F25</option>
+                    <option value="F26">F26</option>
+                    <option value="F27">F27</option>
+                    <option value="F28">F28</option>
+                    <option value="F29">F29</option>
+                    <option value="F30">F30</option>
+                    <option value="F31">F31</option>
+                    <option value="F32">F32</option>
+                    <option value="F33">F33</option>
+                    <option value="F34">F34</option>
+                    <option value="F35">F35</option>
+                    <option value="F36">F36</option>
+                    <option value="F37">F37</option>
+                    <option value="F38">F38</option>
+                    <option value="F39">F39</option>
+                    <option value="F40">F40</option>
+                    <option value="F41">F41</option>
+                    <option value="F42">F42</option>
+                    <option value="F43">F43</option>
+                    <option value="F44">F44</option>
+                    <option value="G1">G1</option>
+                    <option value="G2">G2</option>
+                    <option value="G3">G3</option>
+                    <option value="G4">G4</option>
+                    <option value="G5">G5</option>
+                    <option value="G6">G6</option>
+                    <option value="G7">G7</option>
+                    <option value="G8">G8</option>
+                    <option value="G9">G9</option>
+                    <option value="G10">G10</option>
+                    <option value="G11">G11</option>
+                    <option value="G12">G12</option>
+                    <option value="G13">G13</option>
+                    <option value="G14">G14</option>
+                    <option value="G15">G15</option>
+                    <option value="G16">G16</option>
+                    <option value="G17">G17</option>
+                    <option value="G18">G18</option>
+                    <option value="G19">G19</option>
+                    <option value="G20">G20</option>
+                    <option value="G21">G21</option>
+                    <option value="G22">G22</option>
+                    <option value="G23">G23</option>
+                    <option value="G24">G24</option>
+                    <option value="G25">G25</option>
+                    <option value="G26">G26</option>
+                    <option value="G27">G27</option>
+                    <option value="G28">G28</option>
+                    <option value="G29">G29</option>
+                    <option value="G30">G30</option>
+                    <option value="G31">G31</option>
+                    <option value="G32">G32</option>
+                    <option value="G33">G33</option>
+                    <option value="G34">G34</option>
+                    <option value="G35">G35</option>
+                    <option value="G36">G36</option>
+                    <option value="G37">G37</option>
+                    <option value="G38">G38</option>
+                    <option value="G39">G39</option>
+                    <option value="G40">G40</option>
+                    <option value="G41">G41</option>
+                    <option value="G42">G42</option>
+                    <option value="G43">G43</option>
+                    <option value="G44">G44</option>
+                    <option value="G45">G45</option>
+                    <option value="G46">G46</option>
+                    <option value="G47">G47</option>
+                    <option value="G48">G48</option>
+                    <option value="H1">H1</option>
+                    <option value="H2">H2</option>
+                    <option value="H3">H3</option>
+                    <option value="H4">H4</option>
+                    <option value="H5">H5</option>
+                    <option value="H6">H6</option>
+                    <option value="H7">H7</option>
+                    <option value="H8">H8</option>
+                    <option value="H9">H9</option>
+                    <option value="H10">H10</option>
+                    <option value="H11">H11</option>
+                    <option value="H12">H12</option>
+                    <option value="H13">H13</option>
+                    <option value="H14">H14</option>
+                    <option value="H15">H15</option>
+                    <option value="H16">H16</option>
+                    <option value="H17">H17</option>
+                    <option value="H18">H18</option>
+                    <option value="H19">H19</option>
+                    <option value="H20">H20</option>
+                    <option value="H21">H21</option>
+                    <option value="H22">H22</option>
+                    <option value="H23">H23</option>
+                    <option value="H24">H24</option>
+                    <option value="H25">H25</option>
+                    <option value="H26">H26</option>
+                    <option value="H27">H27</option>
+                    <option value="H28">H28</option>
+                    <option value="H29">H29</option>
+                    <option value="H30">H30</option>
+                    <option value="H31">H31</option>
+                    <option value="H32">H32</option>
+                    <option value="H33">H33</option>
+                    <option value="H34">H34</option>
+                    <option value="H35">H35</option>
+                    <option value="H36">H36</option>
+                    <option value="H37">H37</option>
+                    <option value="H38">H38</option>
+                    <option value="H39">H39</option>
+                    <option value="H40">H40</option>
+                    <option value="H41">H41</option>
+                    <option value="H42">H42</option>
+                    <option value="H43">H43</option>
+                    <option value="H44">H44</option>
+                    <option value="H45">H45</option>
+                    <option value="H46">H46</option>
+                    <option value="H47">H47</option>
+                    <option value="H48">H48</option>
+                    <option value="H49">H49</option>
+                    <option value="H50">H50</option>
+                    <option value="H51">H51</option>
+                    <option value="H52">H52</option>
+                    <option value="I1">I1</option>
+                    <option value="I2">I2</option>
+                    <option value="I3">I3</option>
+                    <option value="I4">I4</option>
+                    <option value="I5">I5</option>
+                    <option value="I6">I6</option>
+                    <option value="I7">I7</option>
+                    <option value="I8">I8</option>
+                    <option value="I9">I9</option>
+                    <option value="I10">I10</option>
+                    <option value="I11">I11</option>
+                    <option value="I12">I12</option>
+                    <option value="I13">I13</option>
+                    <option value="I14">I14</option>
+                    <option value="I15">I15</option>
+                    <option value="I16">I16</option>
+                    <option value="I17">I17</option>
+                    <option value="I18">I18</option>
+                    <option value="I19">I19</option>
+                    <option value="I20">I20</option>
+                    <option value="I21">I21</option>
+                    <option value="I22">I22</option>
+                    <option value="I23">I23</option>
+                    <option value="I24">I24</option>
+                    <option value="I25">I25</option>
+                    <option value="I26">I26</option>
+                    <option value="I27">I27</option>
+                    <option value="I28">I28</option>
+                    <option value="I29">I29</option>
+                    <option value="I30">I30</option>
+                    <option value="I31">I31</option>
+                    <option value="I32">I32</option>
+                    <option value="I33">I33</option>
+                    <option value="I34">I34</option>
+                    <option value="I35">I35</option>
+                    <option value="I36">I36</option>
+                    <option value="I37">I37</option>
+                    <option value="I38">I38</option>
+                    <option value="I39">I39</option>
+                    <option value="I40">I40</option>
+                    <option value="I41">I41</option>
+                    <option value="I42">I42</option>
+                    <option value="I43">I43</option>
+                    <option value="I44">I44</option>
+                    <option value="I45">I45</option>
+                    <option value="I46">I46</option>
+                    <option value="I47">I47</option>
+                    <option value="I48">I48</option>
+                    <option value="I49">I49</option>
+                    <option value="I50">I50</option>
+                    <option value="I51">I51</option>
+                    <option value="I52">I52</option>
+                    <option value="I53">I53</option>
+                    <option value="I54">I54</option>
+                    <option value="I55">I55</option>
+                    <option value="I56">I56</option>
+                </select>
+                <label for="">Number of Tickets:</label>
+                <select name="tier1" id="ticketQuantity">
+                    <option value="">Select No. of Tickets</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <!-- Add this before closing body tag -->
+        <div class="booking-summary">
+            <h3>Booking Summary</h3>
+            <p>Selected Seat: <span id="selectedSeat">None</span></p>
+            <p>Number of Tickets: <span id="ticketCount">0</span></p>
+            <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+            <button class="book-btn" id="proceedToPayment" onclick="window.location.href='payment.html'">
+                Proceed to Payment
+            </button>
+        </div>
+    </div>
+
+
+    <script src="booking.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Auditorium</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="auditorium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ts2.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="theatre.html">Theatre</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="auditorium.html" class="active">Auditorium</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="signup.html"><i class="fas fa-user"></i></a>
+            <a href="fancy-ticket.html"><i class="fas fa-ticket-alt"></i></a>
+        </div>
+    </nav>
+
+    <div class="auditorium-container">
+        <h1>Our Auditoriums</h1>
+        
+        <div class="auditorium-grid">
+            <div class="auditorium-card">
+                <img src="download (1).jpeg" alt="Main Hall">
+                <div class="card-content">
+                    <h2>Main Hall</h2>
+                    <p>Capacity: 1500 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (2).jpeg" alt="Intimate Theatre">
+                <div class="card-content">
+                    <h2>Intimate Theatre</h2>
+                    <p>Capacity: 300 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (3).jpeg" alt="Experimental Space">
+                <div class="card-content">
+                    <h2>Experimental Space</h2>
+                    <p>Capacity: 150 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (4).jpeg" alt="Black Box Theatre">
+                <div class="card-content">
+                    <h2>Black Box Theatre</h2>
+                    <p>Capacity: 100 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (5).jpeg" alt="Concert Hall">
+                <div class="card-content">
+                    <h2>Concert Hall</h2>
+                    <p>Capacity: 800 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (6).jpeg" alt="Open Air Theatre">
+                <div class="card-content">
+                    <h2>Open Air Theatre</h2>
+                    <p>Capacity: 2000 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (7).jpeg" alt="Studio Theatre">
+                <div class="card-content">
+                    <h2>Studio Theatre</h2>
+                    <p>Capacity: 200 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (8).jpeg" alt="Drama Room">
+                <div class="card-content">
+                    <h2>Drama Room</h2>
+                    <p>Capacity: 120 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+
+            <div class="auditorium-card">
+                <img src="download (9).jpeg" alt="Multimedia Hall">
+                <div class="card-content">
+                    <h2>Multimedia Hall</h2>
+                    <p>Capacity: 400 seats</p>
+                    <button class="view-seats-btn">View Seating</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="seating-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Seating Layout</h2>
+                <div class="seating-layout"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auditorium.js"></script>
+</body>
+</html>

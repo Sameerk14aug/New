@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Theatre</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ts2.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="theatre.html">Theatre</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="auditorium.html">Auditorium</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="signup.html"><i class="fas fa-user"></i></a>
+            <a href="fancy-ticket.html"><i class="fas fa-ticket-alt"></i></a>
+        </div>
+    </nav>
+    
+    <div class="auth-container">
+        <form class="auth-form" id="loginForm">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+            <p class="switch-auth">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add login logic here
+            window.location.href = 'index.html'; // Redirect to home page after login
+        });
+    </script>
+</body>
+</html>
